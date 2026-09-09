@@ -1,0 +1,66 @@
+:root {
+  --vp-layout-top-height: 40px;
+  --vp-layout-max-width: 95%;
+  --vp-sidebar-width: 300px;
+}
+
+.announcement-banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--vp-z-index-layout-top, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: var(--vp-layout-top-height);
+  padding: 8px 16px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  background: linear-gradient(90deg, #ffdfae 0%, #ffbd53 100%);
+}
+
+.dark .announcement-banner {
+  color: #fff;
+  background: linear-gradient(90deg, #5e4219 0%, #583c10 100%);
+}
+
+.vp-doc img {
+  display: block;
+  width: auto;
+  max-height: 50vh;
+}
+
+.vp-doc img + em {
+  display: block;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.VPDoc:not(.has-sidebar) .container {
+  max-width: 2000px !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 1264px !important;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1168px !important;
+}
+
+.VPDoc .container {
+  margin: 0;
+}
+
+th,
+td {
+  width: 10%;
+}
