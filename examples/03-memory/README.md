@@ -1,13 +1,15 @@
-# 03 Memory Example
+# 03 Memory Examples
 
 ## Core Question
 
 How do virtual addresses map to physical memory, and how do access patterns affect performance?
 
-## Planned Work
+## Examples
 
-- Inspect a process address space and its memory mappings.
-- Trigger and observe page faults.
-- Compare the cache behavior of different access patterns.
+| Example | Type | Language | Focus |
+| --- | --- | --- | --- |
+| [Memory Access Profiler](01-memory-access-profiler/) | Core | C | Address spaces, first-touch page faults, resident memory, and locality |
+| [LRU Cache](02-lru-cache/) | Practice | Go | Capacity, recency, eviction, and bounded in-memory state |
 
-The environment, commands, expected output, and verification process remain to be added.
+The core example observes virtual-memory behavior. The practice example applies
+memory-capacity reasoning to a testable data structure.

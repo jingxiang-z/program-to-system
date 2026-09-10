@@ -1,13 +1,14 @@
-# 07 Distributed Systems Example
+# 07 Distributed Systems Examples
 
 ## Core Question
 
 How do replicas coordinate when nodes, networks, and clocks are unreliable?
 
-## Planned Work
+## Examples
 
-- Simulate message delays, message loss, and node failures.
-- Compare replication acknowledgment strategies.
-- Observe state synchronization after a node recovers.
+| Example | Type | Language | Focus |
+| --- | --- | --- | --- |
+| [Replicated Register](01-replicated-register/) | Core | Go | Event order, replication acknowledgments, network faults, and replica catch-up |
 
-The environment, commands, expected output, and verification process remain to be added.
+The example uses a deterministic in-process transport so failures are repeatable. It
+does not require leader election or a complete consensus implementation.
